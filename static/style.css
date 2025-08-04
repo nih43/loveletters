@@ -7,15 +7,37 @@ body {
     justify-content: center;
     padding: 50px;
 }
+.heading {
+  text-align: center;
+}
 .container {
     max-width: 600px;
     background-color: #fff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: center;
 }
-.letter {
+.dailyQuestion {
     white-space: pre-wrap;
     margin-top: 20px;
     font-size: 1.1em;
+    display: ruby-text;
+}
+.answerField {
+    font-family: 'Segoe UI', sans-serif;
+    white-space: pre-wrap;
+    margin-top: 20px;
+    font-size: 1.1em;   
+}
+.submit {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.1em;
+    border-style: hidden;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+.submit:hover {
+    background-color: #fffaf0;
 }

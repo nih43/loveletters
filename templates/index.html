@@ -3,13 +3,41 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Dein Tagesbrief 💌</title>
+    <title>Dein tägliches Bisschen Liebe 💌</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>💌 Dein Brief für heute</h1>
-        <div class="letter">{{ letter|safe }}</div>
+    <div class="container">      
+        <h1 class="heading">💌 Deine Frage für heute:</h1>  
+
+        <div class="dailyQuestion">
+            {{ question|safe }}
+        </div>
+
+        <span style="display: grid">
+            <input
+                class="answerField"
+                type="text"
+                id="answer"
+                name="answer"
+                required    
+            />
+
+            <button class="submit" type="button" onclick="submitAnswer">Antwort überprüfen</button>
+        </span>
     </div>
+
+
+<script>
+    function submitAnswer() {
+        const input = document.getElementById("answer").value;
+        if (input != answer){
+            alert("Das war leider nicht richtig Schatz - Versuch es doch noch einmal ❣");
+        }
+        else {
+           
+        }
+    }
+</script>
 </body>
 </html>
